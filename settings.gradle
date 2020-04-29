@@ -1,0 +1,2 @@
+rootProject.name='Onak Mobile App'
+include ':app'

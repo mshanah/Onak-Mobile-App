@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".login"
+    android:gravity="center"
+    >
+
+
+    <ImageView
+        android:src="@drawable/onak"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:id="@+id/alogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alogo"
+        android:hint="User Name"
+        android:gravity="center"
+        android:id="@+id/username"
+        android:layout_margin="20dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/password"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="@string/prompt_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:text="Login"
+        android:background="@color/buttonColor"
+        android:textColor="@android:color/white"
+        android:layout_margin="40dp"
+        android:id="@+id/login"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/forget"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/buttonColor"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignStart="@+id/login"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/buttonColor"
+        android:layout_alignEnd="@+id/login"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAllCaps="false"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_above="@+id/login"
+        />
+
+</RelativeLayout>
