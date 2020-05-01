@@ -37,7 +37,6 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import adu.ac.ae.onakapp.config.AuthStateManager;
 import adu.ac.ae.onakapp.config.Configuration;
-import adu.ac.ae.onakapp.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String EXTRA_FAILED = "failed";
@@ -166,9 +165,9 @@ public class MainActivity extends AppCompatActivity {
             //displayAuthCancelled();
         } else {
             System.out.println("Result "+data.getExtras().toString());
-            Intent intent = new Intent(this, LoginActivity.class);
+            /*Intent intent = new Intent(this, MainActivity.class);
             intent.putExtras(data.getExtras());
-            startActivity(intent);
+            startActivity(intent);*/
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
@@ -272,7 +271,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (mUsePendingIntents) {
             Intent completionIntent = new Intent(this, MainActivity.class);
-            Intent cancelIntent = new Intent(this, LoginActivity.class);
+            Intent cancelIntent = new Intent(this, MainActivity.class);
             cancelIntent.putExtra(EXTRA_FAILED, true);
             cancelIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
