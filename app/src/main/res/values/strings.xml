@@ -12,4 +12,13 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="report_accident">Report Accident</string>
+    <string name="ask_for_help">Ask For Help</string>
+    <string name="exit_permission">Exit Permission</string>
+    <string name="track_requests">Track Requests</string>
+    <string name="grocery_limit">Grocery Limit</string>
+    <string name="announcement">Announcement</string>
+    <string name="track_movement">Track Movement</string>
+    <string name="manage_family">Manage Family</string>
+    <string name="profile">Profile</string>
 </resources>
